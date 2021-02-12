@@ -1,0 +1,7 @@
+@font-face {
+font-family: 'Rubik';
+src: url('//m-build.cdnvideo.ru/web/user/fonts/rubik/rubik_medium.woff2') format('woff2'), url('//m-build.cdnvideo.ru/web/user/fonts/rubik/rubik_medium.woff') format('woff');
+font-weight: 500;
+font-style: normal;
+font-display: swap;
+}

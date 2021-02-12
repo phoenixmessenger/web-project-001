@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+:root {
+	--main-color: #111;
+}
+* {
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	margin: 0px;
+}
+header {
+background-color: rgba(0, 0, 0, 0.8);	
+}
+li.
+p {
+
+	var (--main-color);
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	width: 200px;
+}
+.nav-menu {
+	display: flex;
+	list-style: none;
+
+}
+
+.nav-menu li {
+	font-size: 18px;
+
+
+}
+
+.nav-menu li a {
+	text-decoration: none;
+	padding: 10px 20px;
+	color: var(--main-color);
+	background-color: #ddd;
+	/*transition: all ease 0.25s;*/
+	transition: .25s;
+
+}
+
+.nav-menu li a:hover {
+	color: #ddd;
+	background-color: var(--main-color);
+}
+
+.nav-menu li a:before {
+
+}
+.phone-number {
+	color: #ddd;
+	font-size: 18px;
+	position: relative;
+}
+
+.phone-number:before {
+	content: "";
+	background: url(img/phone-ico.png);
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: -30px;
+}

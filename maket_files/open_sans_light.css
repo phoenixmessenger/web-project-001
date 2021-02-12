@@ -1,0 +1,7 @@
+@font-face {
+font-family: 'Open Sans';
+src: url('//m-build.cdnvideo.ru/web/user/fonts/open_sans/open_sans_light.woff') format('woff'), url('//m-build.cdnvideo.ru/web/user/fonts/open_sans/open_sans_light.ttf') format('ttf');
+font-weight: 300;
+font-style: normal;
+font-display: swap;
+}

@@ -1,0 +1,7 @@
+@font-face {
+font-family: 'Roboto';
+src: url('//m-build.cdnvideo.ru/web/user/fonts/roboto/roboto_medium.woff') format('woff'), url('//m-build.cdnvideo.ru/web/user/fonts/roboto/roboto_medium.ttf') format('ttf');
+font-weight: 500;
+font-style: normal;
+font-display: swap;
+}
