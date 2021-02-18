@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100&display=swap');
+
+
 :root {
 	--main-color: #111;
+	--white-item-color: #ffffff;
+	--secondary-background-color: #202154;
+	--link-background-color: rgba(255, 192, 42, 1);
+	--list-background-color: #f1f1f1;
 }
 * {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 body {
 	margin: 0px;
@@ -35,13 +42,10 @@ p {
 	list-style: none;
 
 }
-
 .nav-menu li {
 	font-size: 18px;
 
-
 }
-
 .nav-menu li a {
 	text-decoration: none;
 	padding: 10px 20px;
@@ -49,14 +53,11 @@ p {
 	background-color: #ddd;
 	/*transition: all ease 0.25s;*/
 	transition: .25s;
-
 }
-
 .nav-menu li a:hover {
 	color: #ddd;
 	background-color: var(--main-color);
 }
-
 .nav-menu li a:before {
 
 }
@@ -65,7 +66,6 @@ p {
 	font-size: 18px;
 	position: relative;
 }
-
 .phone-number:before {
 	content: "";
 	background: url(img/phone-ico.png);
@@ -74,4 +74,80 @@ p {
 	height: 20px;
 	position: absolute;
 	left: -30px;
+}
+.our-prices-block {
+	width: 1170px;
+	height: 1046px;
+	margin: auto;
+	background-color: var(--white-item-color);
+}
+.our-prices-block h2 {
+	font-family: Open Sans, sans-serif;
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.our-prices-block p {
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: center;
+}
+.our-prices-block p::first-letter {
+	font-size: 130%;
+}
+.price-list {
+	max-height: 677px;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: flex-start;
+}
+.prices {
+	width: 341px;
+	margin-right: 35px;
+	background-color: var(--list-background-color);
+}
+
+.prices p {
+	font-family: Open Sans;
+	font-size: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--white-item-color);
+	background-color: var(--main-color);
+	padding: 30px 30px 30px 30px;
+	margin: 0px;
+}
+.prices ul {
+	padding: 41px 12px 41px 12px;
+	margin: 0px;
+	line-height: 1.4;
+}
+.prices li {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 3;
+	text-align: center;
+	list-style: none;
+}
+.prices a {
+	display: table;
+	text-decoration: none;
+	background-color: var(--link-background-color);
+	text-align: center;
+	padding: 20px 40px 20px 40px;
+	margin: 0px 36px 93px 93px;
+
+}
+.prices span {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--secondary-background-color);
+}	
+.prices span:hover {
+	background-color: rgba(255, 210, 42, 1)
 }
