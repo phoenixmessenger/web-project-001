@@ -138,8 +138,9 @@ p {
 	background-color: var(--link-background-color);
 	text-align: center;
 	padding: 20px 40px 20px 40px;
-	margin: 0px 36px 93px 93px;
-
+	margin-bottom: 36px;
+	margin-left: 93px;
+	margin-right: 93px;
 }
 .prices span {
 	font-family: Roboto, sans-serif;
