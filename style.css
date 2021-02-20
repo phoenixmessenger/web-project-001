@@ -131,6 +131,6 @@ p {
 	border-radius: 10px;
 	font-weight: bold;
 }
-.prices a::hover {
-	color: rgba(255, 210, 42, 1)
+.prices a:hover {
+	background-color: rgba(255, 210, 42, 1);
 }
