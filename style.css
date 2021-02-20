@@ -126,8 +126,9 @@ p {
 	background-color: var(--link-background-color);
 	text-align: center;
 	padding: 20px 40px;
-	margin: 0 auto 30px;
+	margin-bottom: 36px;
 	border-radius: 10px;
+	font-weight: bold;
 }
 .prices a::hover {
 	color: rgba(255, 210, 42, 1)
