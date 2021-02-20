@@ -75,12 +75,6 @@ p {
 	position: absolute;
 	left: -30px;
 }
-.our-prices-block {
-	width: 1170px;
-	height: 1046px;
-	margin: auto;
-	background-color: var(--white-item-color);
-}
 .our-prices-block h2 {
 	font-family: Open Sans, sans-serif;
 	font-size: 42px;
@@ -96,9 +90,7 @@ p {
 	font-size: 130%;
 }
 .price-list {
-	max-height: 677px;
 	display: flex;
-	margin: auto;
 	justify-content: center;
 	align-items: flex-start;
 }
