@@ -91,12 +91,11 @@ p {
 }
 .price-list {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: flex-start;
 }
 .prices {
-	width: 341px;
-	margin-right: 35px;
+	width: calc((100% - 60px) / 3);
 	background-color: var(--list-background-color);
 }
 
@@ -104,43 +103,32 @@ p {
 	font-family: Open Sans;
 	font-size: 22px;
 	text-align: center;
-	text-transform: uppercase;
 	color: var(--white-item-color);
 	background-color: var(--main-color);
-	padding: 30px 30px 30px 30px;
+	padding: 30px;
 	margin: 0px;
 }
 .prices ul {
-	padding: 41px 12px 41px 12px;
+	padding: 41px 12px;
 	margin: 0px;
 	line-height: 1.4;
 }
 .prices li {
 	font-family: Open Sans;
-	font-style: normal;
-	font-weight: 300;
 	font-size: 16px;
 	line-height: 3;
 	text-align: center;
-	list-style: none;
+	list-style-type: none;
 }
 .prices a {
-	display: table;
+	display: inline-block;
 	text-decoration: none;
 	background-color: var(--link-background-color);
 	text-align: center;
-	padding: 20px 40px 20px 40px;
-	margin-bottom: 36px;
-	margin-left: 93px;
-	margin-right: 93px;
+	padding: 20px 40px;
+	margin: 0 auto 30px;
+	border-radius: 10px;
 }
-.prices span {
-	font-family: Roboto, sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	color: var(--secondary-background-color);
-}	
-.prices span:hover {
-	background-color: rgba(255, 210, 42, 1)
+.prices a::hover {
+	color: rgba(255, 210, 42, 1)
 }
