@@ -75,6 +75,37 @@ p {
 	position: absolute;
 	left: -30px;
 }
+#hero {
+	background-image: url(img/hero-bg.jpg);
+	background-position: 50%, 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.hero-overlay {
+	padding-top: 100px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+#hero h2 {
+	font-family: Open Sans, Arial;
+	color: var(--white-item-color);
+	font-size: 56px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+#hero a {
+	display: inline-block;
+    text-decoration: none;
+    background-color: var(--link-background-color);
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    margin-bottom: 36px;
+    border-radius: 10px;
+    font-weight: bold;
+}
 .our-prices-block h2 {
 	font-family: Open Sans, sans-serif;
 	font-size: 42px;
@@ -123,7 +154,7 @@ p {
 }
 .prices a {
 	display: inline-block;
-    	text-decoration: none;
+   	text-decoration: none;
 	background-color: var(--link-background-color);
 	text-align: center;
 	padding: 20px 40px 20px 40px;
@@ -141,17 +172,24 @@ p {
 	background-attachment: fixed;
 }
 .overlay {
-	padding: 60px 0;
+	padding-top: 60px;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 #cta h2 {
+	font-family: Arial, sans-serif;
 	color: #fff;
+	padding-top: 60px;
 	font-size: 50px;
+	font-weight: bold;
 	text-align: center;
-} 
+	text-transform: uppercase;
+}
+
 #cta p {
+	font-family: Roboto, sans-serif;
 	color: #fff;
 	font-size: 20px;
+	text-align: center;
 }
 .button {
 	text-align: center;
