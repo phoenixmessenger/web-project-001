@@ -106,6 +106,42 @@ p {
     border-radius: 10px;
     font-weight: bold;
 }
+#facts-about-company {
+	background-image: url(img/background-002.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.facts-company-overlay {
+	padding-top: 40px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.facts-company-overlay h2 {
+	font-family: Open Sans, Arial;
+	color: var(--white-item-color);
+	font-weight: bold;
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+#facts-about-company h3 {
+	font-family: Open Sans, Arial;
+	color: #ffc02a;
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4;
+	position: relative;
+}
+#facts-about-company:before {
+	content: "";
+	background: url(img/cars.jpg);
+	background-size: 454px, 293px;
+	position: absolute;
+	left: -40px;
+}
 .our-prices-block h2 {
 	font-family: Open Sans, sans-serif;
 	font-size: 42px;
