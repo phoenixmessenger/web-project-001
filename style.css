@@ -114,7 +114,13 @@ p {
 }
 .facts-company-overlay {
 	padding-top: 40px;
+	padding-bottom: 40px;
 	background-color: rgba(0, 0, 0, 0.9);
+}
+.facts-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 .facts-company-overlay h2 {
 	font-family: Open Sans, Arial;
@@ -130,17 +136,17 @@ p {
 	color: #ffc02a;
 	font-weight: bold;
 	font-size: 36px;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	line-height: 1.4;
-	position: relative;
 }
-#facts-about-company:before {
-	content: "";
-	background: url(img/cars.jpg);
-	background-size: 454px, 293px;
-	position: absolute;
-	left: -40px;
+
+#facts-about-company span {
+	font-family: Roboto, Arial;
+	color: var(--white-item-color);
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
 }
 .our-prices-block h2 {
 	font-family: Open Sans, sans-serif;
@@ -240,3 +246,82 @@ p {
     border-radius: 10px;
     font-weight: bold;
 }
+#customers-feedback h2 {
+	font-family: Open Sans, Arial;
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#customers-feedback p {
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: center;	
+}
+#customers-feedback p::first-letter {
+	font-size: 130%;
+}
+.content-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.clients {
+	padding: 20px 20px;
+    border-radius: 5px;
+    background: var(--white-item-color);
+    word-wrap: break-word;
+   	line-height: 1.4;
+   	margin-bottom: 80px;
+}
+.name {
+	font-weight: bold;
+}
+.feedback-text {
+	font-family: Roboto, Arial;
+	font-size: 18px;
+	color: var(--main-color);
+	text-align: left;
+}
+#autos {
+	background-image: url(img/background-003.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.auto-list {
+	max-width: 341px;
+	margin-bottom: 80px;
+}
+#autos h2 {
+	font-family: Open Sans, Arial;
+	color: var(--white-item-color);
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 80px 40px;
+}
+#autos h3 {
+	font-family: Open Sans, Arial;
+	font-size: 24px;
+	font-weight: bold;
+	color: var(--link-background-color);
+	text-transform: uppercase;
+	text-align: left;
+}
+#autos p {
+	font-family: Roboto, Arial;
+	color: var(--white-item-color);
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+
+}
+#autos span {
+	font-family: Roboto, Arial;
+	color: var(--white-item-color);
+	font-size: 18px;
+	text-align: left;
+	line-height: 1.4;
+}
+
+
