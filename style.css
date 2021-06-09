@@ -122,7 +122,11 @@ p {
 	justify-content: space-between;
 	align-items: flex-start;
 }
-.facts-company-overlay h2 {
+
+.facts-block-text {
+	margin-left: 50px;
+}
+#facts-about-company h2 {
 	font-family: Open Sans, Arial;
 	color: var(--white-item-color);
 	font-weight: bold;
@@ -140,13 +144,12 @@ p {
 	text-transform: uppercase;
 	line-height: 1.4;
 }
-
-#facts-about-company span {
+#facts-about-company p {
 	font-family: Roboto, Arial;
 	color: var(--white-item-color);
 	font-size: 18px;
 	font-weight: normal;
-	text-align: center;
+	text-align: left;
 }
 .our-prices-block h2 {
 	font-family: Open Sans, sans-serif;
@@ -172,7 +175,6 @@ p {
 	background-color: var(--list-background-color);
 	text-align: center;
 }
-
 .prices p {
 	font-family: Open Sans;
 	font-size: 22px;
@@ -298,7 +300,6 @@ p {
 	font-size: 42px;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 80px 40px;
 }
 #autos h3 {
 	font-family: Open Sans, Arial;
@@ -323,5 +324,10 @@ p {
 	text-align: left;
 	line-height: 1.4;
 }
-
+.accent-text {
+	font-family: Open Sans, Arial;
+	font-size: 42px;
+	color: var(--link-background-color);
+	text-transform: uppercase;
+}
 
