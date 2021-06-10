@@ -330,4 +330,36 @@ p {
 	color: var(--link-background-color);
 	text-transform: uppercase;
 }
+#order h2 {
+	font-family: Open Sans, Arial;
+	color: var(--main-color);
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#order ol {
+	counter-reset: orderpunkt;
+	list-style-type: none;
+}
+#order li {
+	color: var(--main-color);
+	position: relative;
+	font-family: Roboto, Arial;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 0px 0px 39px 0px;
+}
+#order li:before {
+	content: counter(orderpunkt);
+	counter-increment: orderpunkt; 
+	position: absolute;
+	left: -100px;
+	font-family: Roboto, Arial;
+	font-size: 18px;
+	font-weight: 300;
+	color: var(--white-item-color);
+	background: var(--link-background-color);
+	border-radius: 100px;
+	padding: 18px 22px;
+}
 
