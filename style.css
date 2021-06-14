@@ -11,6 +11,8 @@
 }
 * {
 	font-family: 'Roboto', 'Open Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
 }
 body {
 	margin: 0px;
@@ -81,11 +83,12 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hero-overlay {
 	padding-top: 100px;
-	background-color: rgba(0, 0, 0, 0.3);
+
 }
 #hero h2 {
 	font-family: Open Sans, Arial;
@@ -259,9 +262,6 @@ p {
 	font-size: 22px;
 	text-align: center;	
 }
-#customers-feedback p::first-letter {
-	font-size: 130%;
-}
 .content-list {
 	display: flex;
 	justify-content: space-between;
@@ -313,7 +313,7 @@ p {
 	font-family: Roboto, Arial;
 	color: var(--white-item-color);
 	font-size: 18px;
-	font-weight: bold;
+	font-style: bold;
 	text-align: left;
 
 }
@@ -330,12 +330,20 @@ p {
 	color: var(--link-background-color);
 	text-transform: uppercase;
 }
+.order-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
 #order h2 {
 	font-family: Open Sans, Arial;
 	color: var(--main-color);
 	font-size: 42px;
 	text-align: center;
 	text-transform: uppercase;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 #order ol {
 	counter-reset: orderpunkt;
@@ -362,4 +370,113 @@ p {
 	border-radius: 100px;
 	padding: 18px 22px;
 }
+.orderform fieldset {
+	border: 3px solid rgb(255, 192, 42);
+    padding: 50px, 20px;
+    border-radius: 5px;
+    background: var(--white-item-color);
+}
+.orderform fieldset p {
+	margin-bottom: 20px;
+}
+.orderform h3 {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-style: normal;
+	color: rgba(3, 3, 3, 1);
+	font-size: 26px;
+	text-align: center;
+	padding: 10px, 0px, 18px;
+	margin: 20px;
+}
+.orderform label {
+	margin-left: 40px;
+	padding: 4px, 6px, 4px, 10px;
+}
+.orderform button {
+	font-family: Rubik, Arial;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    background: #FFC02A;
+    border-radius: 5px;
+    border: none;
+    color: var(--link-background-color);
+    padding: 20px, 70px;
+}
+#partners {
+	background-image: url(img/background-004.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#partners h2 {
+	font-family: Open Sans, Arial;
+	color: var(--white-item-color);
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase; 
+}
+#partners p {
+	font-family: Roboto, Arial;
+	color: var(--white-item-color);
+	font-size: 18px;
+	font-weight: 100;
+	font-style: normal;
+	text-align: center;
+}
+.image-gallery {
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+#partners li {
+	list-style-type: none;
+	padding-bottom: 40px;
+}
+footer {
+	background-color: var(--main-color);
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-lozung {
+	text-align: center;
+}
+.footer-text {
+	font-family: Open Sans, Arial;
+	color: var(--white-item-color);
+	font-size: 24px;
+	font-weight: 700;
+	font-style: normal;
+}
+.footer-accent-text {
+	font-family: Open Sans, Arial;
+	color: var(--link-background-color);
+	font-size: 24px;
+	font-weight: 700;
+	font-style: normal;
+}
+.footer-menu li {
+	list-style-type: none;
+}
+.footer-menu li a {
+	text-decoration: none;
+	color: var(--white-item-color);
+}
+.footer-menu li a:hover {
+	color: var(--link-background-color);
+}
+.address-box span {
+	font-family: Open Sans, Arial;
+	font-size: 14px;
+	color: var(--white-item-color);
+	line-height: 2.1;
+}
 
+.address-box a {
+	text-decoration: none;
+}
