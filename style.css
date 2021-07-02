@@ -84,8 +84,8 @@ p {
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 1.4;
-	margin-top: 40px;
-	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .head-yellow-text {
 	font-family: Open Sans, Arial;
@@ -280,7 +280,11 @@ color: var(--white-item-color);
    	margin-bottom: 80px;
 }
 .name {
+	font-family: Roboto, Arial;
+	font-size: 22px;
 	font-weight: bold;
+	line-height: 2.0;
+	text-align: center;
 }
 .feedback-text {
 	font-family: Roboto, Arial;
@@ -309,6 +313,7 @@ color: var(--white-item-color);
 	color: var(--link-background-color);
 	text-transform: uppercase;
 	text-align: left;
+	line-height: 1.7;
 }
 #autos p {
 	font-family: Roboto, Arial;
@@ -316,6 +321,7 @@ color: var(--white-item-color);
 	font-size: 18px;
 	font-style: bold;
 	text-align: left;
+	line-height: 2.0;
 
 }
 #autos span {
