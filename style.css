@@ -77,18 +77,48 @@ p {
 	position: absolute;
 	left: -30px;
 }
+.head-text-style {
+	font-family: Open Sans, Arial;
+	font-weight: bold;
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.head-yellow-text {
+	font-family: Open Sans, Arial;
+	font-weight: bold;
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin-top: 40px;	
+	color: var(--link-background-color);
+}
+.paragraph-text-style {
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.paragraph-text-style::first-letter {
+	font-size: 130%;
+}
+.accent-text {
+	font-family: Open Sans, Arial;
+	font-size: 42px;
+	color: var(--link-background-color);
+	text-transform: uppercase;
+}
 #hero {
 	background-image: url(img/hero-bg.jpg);
 	background-position: 50%, 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-.hero-overlay {
-	padding-top: 100px;
-
+	background-color: rgba(0, 0, 0, 0.1);
 }
 #hero h2 {
 	font-family: Open Sans, Arial;
@@ -96,16 +126,22 @@ p {
 	font-size: 56px;
 	font-weight: bold;
 	text-align: center;
-	text-transform: uppercase;
 	line-height: 1.4;
+	padding-top: 100px;
+	padding-bottom: 57px;
 }
-#hero a {
+#hero .button a {
 	display: inline-block;
-    text-decoration: none;
+	text-decoration: none;
+	font-family: Roboto,Arial;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--main-color);
     background-color: var(--link-background-color);
     text-align: center;
     padding: 20px 40px 20px 40px;
-    margin-bottom: 36px;
+    margin-bottom: 60px;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -114,30 +150,22 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-}
-.facts-company-overlay {
-	padding-top: 40px;
-	padding-bottom: 40px;
 	background-color: rgba(0, 0, 0, 0.9);
 }
 .facts-block {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	padding-top: 40px;
+	padding-bottom: 60px;
 }
-
 .facts-block-text {
 	margin-left: 50px;
 }
 #facts-about-company h2 {
-	font-family: Open Sans, Arial;
-	color: var(--white-item-color);
-	font-weight: bold;
-	font-size: 42px;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 1.4;
+color: var(--white-item-color);
 }
+
 #facts-about-company h3 {
 	font-family: Open Sans, Arial;
 	color: #ffc02a;
@@ -145,7 +173,7 @@ p {
 	font-size: 36px;
 	text-align: left;
 	text-transform: uppercase;
-	line-height: 1.4;
+	line-height: 2.0;
 }
 #facts-about-company p {
 	font-family: Roboto, Arial;
@@ -153,20 +181,10 @@ p {
 	font-size: 18px;
 	font-weight: normal;
 	text-align: left;
+	line-height: 1.4;
 }
-.our-prices-block h2 {
-	font-family: Open Sans, sans-serif;
-	font-size: 42px;
-	text-align: center;
-	text-transform: uppercase;
-}
-.our-prices-block p {
-	font-family: Roboto;
-	font-size: 22px;
-	text-align: center;
-}
-.our-prices-block p::first-letter {
-	font-size: 130%;
+.our-prices-block {
+	margin-bottom: 60px;
 }
 .price-list {
 	display: flex;
@@ -202,6 +220,7 @@ p {
 .prices a {
 	display: inline-block;
    	text-decoration: none;
+   	color: var(--main-color);
 	background-color: var(--link-background-color);
 	text-align: center;
 	padding: 20px 40px 20px 40px;
@@ -223,13 +242,7 @@ p {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 #cta h2 {
-	font-family: Arial, sans-serif;
 	color: #fff;
-	padding-top: 60px;
-	font-size: 50px;
-	font-weight: bold;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 #cta p {
@@ -244,6 +257,7 @@ p {
 #cta a {
 	display: inline-block;
     text-decoration: none;
+    color: var(--main-color);
     background-color: var(--link-background-color);
     text-align: center;
     padding: 20px 40px 20px 40px;
@@ -251,17 +265,7 @@ p {
     border-radius: 10px;
     font-weight: bold;
 }
-#customers-feedback h2 {
-	font-family: Open Sans, Arial;
-	font-size: 42px;
-	text-align: center;
-	text-transform: uppercase;
-}
-#customers-feedback p {
-	font-family: Roboto;
-	font-size: 22px;
-	text-align: center;	
-}
+
 .content-list {
 	display: flex;
 	justify-content: space-between;
@@ -291,15 +295,12 @@ p {
 	background-attachment: fixed;
 }
 .auto-list {
+	display: inline-block;
 	max-width: 341px;
 	margin-bottom: 80px;
 }
 #autos h2 {
-	font-family: Open Sans, Arial;
 	color: var(--white-item-color);
-	font-size: 42px;
-	text-align: center;
-	text-transform: uppercase;
 }
 #autos h3 {
 	font-family: Open Sans, Arial;
@@ -324,12 +325,7 @@ p {
 	text-align: left;
 	line-height: 1.4;
 }
-.accent-text {
-	font-family: Open Sans, Arial;
-	font-size: 42px;
-	color: var(--link-background-color);
-	text-transform: uppercase;
-}
+
 .order-container {
 	display: flex;
 	justify-content: space-between;
@@ -371,6 +367,7 @@ p {
 	padding: 18px 22px;
 }
 .orderform fieldset {
+	display: inline-block;
 	border: 3px solid rgb(255, 192, 42);
     padding: 50px, 20px;
     border-radius: 5px;
@@ -379,7 +376,7 @@ p {
 .orderform fieldset p {
 	margin-bottom: 20px;
 }
-.orderform h3 {
+.orderform fieldset h3 {
 	font-family: Open Sans;
 	font-weight: 400;
 	font-style: normal;
@@ -389,11 +386,11 @@ p {
 	padding: 10px, 0px, 18px;
 	margin: 20px;
 }
-.orderform label {
+.orderform fieldset label {
 	margin-left: 40px;
 	padding: 4px, 6px, 4px, 10px;
 }
-.orderform button {
+.orderform fieldset a {
 	font-family: Rubik, Arial;
     font-weight: 500;
     font-style: normal;
@@ -401,7 +398,7 @@ p {
     background: #FFC02A;
     border-radius: 5px;
     border: none;
-    color: var(--link-background-color);
+    color: var(--main-color);
     padding: 20px, 70px;
 }
 #partners {
@@ -411,19 +408,10 @@ p {
 	background-attachment: fixed;
 }
 #partners h2 {
-	font-family: Open Sans, Arial;
 	color: var(--white-item-color);
-	font-size: 42px;
-	text-align: center;
-	text-transform: uppercase; 
 }
 #partners p {
-	font-family: Roboto, Arial;
 	color: var(--white-item-color);
-	font-size: 18px;
-	font-weight: 100;
-	font-style: normal;
-	text-align: center;
 }
 .image-gallery {
 	display:flex;
@@ -476,7 +464,6 @@ footer {
 	color: var(--white-item-color);
 	line-height: 2.1;
 }
-
 .address-box a {
 	text-decoration: none;
 }
