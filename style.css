@@ -112,12 +112,23 @@ p {
 	color: var(--link-background-color);
 	text-transform: uppercase;
 }
+.overlay {
+	padding-top: 60px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.button {
+	text-align: center;
+}
 #hero {
 	background-image: url(img/hero-bg.jpg);
 	background-position: 50%, 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	width: calc(110% - 25px);
+	height: calc(110% - 25px);
+}
+#hero .overlay {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 #hero h2 {
@@ -127,8 +138,8 @@ p {
 	font-weight: bold;
 	text-align: center;
 	line-height: 1.4;
-	padding-top: 100px;
-	padding-bottom: 57px;
+	padding-top: 130px;
+	padding-bottom: 87px;
 }
 #hero .button a {
 	display: inline-block;
@@ -141,7 +152,7 @@ p {
     background-color: var(--link-background-color);
     text-align: center;
     padding: 20px 40px 20px 40px;
-    margin-bottom: 60px;
+    margin-bottom: 130px;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -150,7 +161,6 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-color: rgba(0, 0, 0, 0.9);
 }
 .facts-block {
 	display: flex;
@@ -237,21 +247,13 @@ color: var(--white-item-color);
 	background-size: cover;
 	background-attachment: fixed;
 }
-.overlay {
-	padding-top: 60px;
-	background-color: rgba(0, 0, 0, 0.7);
-}
 #cta h2 {
 	color: #fff;
 }
-
 #cta p {
 	font-family: Roboto, sans-serif;
 	color: #fff;
 	font-size: 20px;
-	text-align: center;
-}
-.button {
 	text-align: center;
 }
 #cta a {
@@ -265,7 +267,6 @@ color: var(--white-item-color);
     border-radius: 10px;
     font-weight: bold;
 }
-
 .content-list {
 	display: flex;
 	justify-content: space-between;
