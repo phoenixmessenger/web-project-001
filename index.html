@@ -13,6 +13,11 @@
 			
 				<a href="#"><img src="img/logo.jpg" alt="Logo.jpg" class="logo"></a>
 				<nav>
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 					<ul class="nav-menu">
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Our Services</a></li>
@@ -243,5 +248,11 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+	$('.burger').on('click', function(){
+		$('.nav-menu').slideToggle();
+	})
+	</script>
 </body>
 </html>
