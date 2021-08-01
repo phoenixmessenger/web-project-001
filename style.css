@@ -478,10 +478,47 @@ footer {
 .address-box a {
 	text-decoration: none;
 }
+.burger {
+	display:none;
+}
 
 @media (max-width: 600px) {
 	.nav-menu {
 	display: none;
+	}
+	.burger {
+	display: block;
+	cursor: pointer;
+	}
+	
+	.burger span {
+	width: 70px;
+	height: 4px;
+	background: #fff;
+	display: block;
+	margin: 4px;
+}
+	.nav {
+	position: relative;
+	}
+	.nav-menu li a {
+    /* text-decoration: none; */
+    padding: 14px 20px;
+    /* color: var(--main-color); */
+    /* background-color: #ddd; */
+    /* transition: all ease 0.25s; */
+    /* transition: .25s; */
+    display: block;
+}
+	.nav-menu {
+display: none;
+    /* list-style: none; */
+background: #ddd;
+position: absolute;
+width: 200px;		
+}
+	.nav-menu ul {
+	
 	}
 	.content-list {
 	flex-wrap: wrap;
