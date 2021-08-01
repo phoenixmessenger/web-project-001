@@ -125,8 +125,6 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	width: calc(110% - 25px);
-	height: calc(110% - 25px);
 }
 #hero .overlay {
 	background-color: rgba(0, 0, 0, 0.1);
@@ -142,19 +140,20 @@ p {
 	padding-bottom: 87px;
 }
 #hero .button a {
-	display: inline-block;
-	text-decoration: none;
-	font-family: Roboto,Arial;
     font-weight: 500;
     font-style: normal;
+    margin-bottom: 130px;
+}
+.button a {
+	display: inline-block;
+	text-decoration: none;
+    font-weight: 500;
     font-size: 18px;
     color: var(--main-color);
     background-color: var(--link-background-color);
     text-align: center;
     padding: 20px 40px 20px 40px;
-    margin-bottom: 130px;
     border-radius: 10px;
-    font-weight: bold;
 }
 #facts-about-company {
 	background-image: url(img/background-002.jpg);
@@ -175,7 +174,6 @@ p {
 #facts-about-company h2 {
 color: var(--white-item-color);
 }
-
 #facts-about-company h3 {
 	font-family: Open Sans, Arial;
 	color: #ffc02a;
