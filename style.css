@@ -147,7 +147,7 @@ p {
 .button a {
 	display: inline-block;
 	text-decoration: none;
-    font-weight: 500;
+    	font-weight: 500;
     font-size: 18px;
     color: var(--main-color);
     background-color: var(--link-background-color);
@@ -391,20 +391,20 @@ color: var(--white-item-color);
 	padding: 10px, 0px, 18px;
 	margin: 20px;
 }
-.orderform fieldset label {
+.orderform {
 	margin-left: 40px;
 	padding: 4px, 6px, 4px, 10px;
 }
-.orderform fieldset a {
-	font-family: Rubik, Arial;
-    font-weight: 500;
-    font-style: normal;
+input[type="submit"] {
+	display: inline-block;
+	text-decoration: none;
+    	font-weight: 500;
     font-size: 18px;
-    background: #FFC02A;
-    border-radius: 5px;
-    border: none;
     color: var(--main-color);
-    padding: 20px, 70px;
+    background-color: var(--link-background-color);
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
 }
 #partners {
 	background-image: url(img/background-004.png);
