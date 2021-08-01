@@ -371,17 +371,17 @@ color: var(--white-item-color);
 	border-radius: 100px;
 	padding: 18px 22px;
 }
-.orderform fieldset {
-	display: inline-block;
+.orderform {
+	display: block;
 	border: 3px solid rgb(255, 192, 42);
-    padding: 50px, 20px;
-    border-radius: 5px;
-    background: var(--white-item-color);
+    	padding: 50px, 20px;
+    	border-radius: 5px;
+    	background: var(--white-item-color);
 }
-.orderform fieldset p {
+.orderform p {
 	margin-bottom: 20px;
 }
-.orderform fieldset h3 {
+.orderform h3 {
 	font-family: Open Sans;
 	font-weight: 400;
 	font-style: normal;
