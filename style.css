@@ -478,7 +478,7 @@ footer {
 
 @media (max-width: 600px) {
 	header {
-	width: 96%;
+	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
 	}
 	.nav-menu {
@@ -525,12 +525,17 @@ footer {
 		display: none;
 	}
 	.head-text-style {
-		font-size: 30px;
+		font-size: 20px;
+	}
+	.paragraph-text-style {
+		font-size: 17px;
 	}
 }
 @media (max-width: 600px) {
 	#hero h1 {
-		font-size: 30px;
+		font-size: 25px;
+		margin: 0 auto;
+		text-align: center;
 	}
 	
 	#facts-about-company img {
@@ -544,7 +549,6 @@ footer {
 		text-align: center;
 	}
 	.facts-block-text p {
-		margin: 0 auto;
 		line-height: 1.8;
 		text-align: justify;
 	}
@@ -563,26 +567,27 @@ footer {
 @media (max-width: 600px) {
 	#cta p {
 		text-align: justify;
-		margin: 10px 20px 30px 20px; 
+		margin: 10px 30px 30px 30px; 
 	}
 	.head-yellow-text {
-		font-size: 30px;
+		font-size: 20px;
+		margin: 0 auto; 
 	}
 	.content-list {
 		flex-wrap: wrap;
 		text-align: center;
 	}
 	.content-list > .clients img {
-		width: 110%;
-	}
-	.auto-list {
-		margin-bottom: 20px;
+		width: 100%;
 	}
 	#autos {
 		background-image: none;
 	}
+	.auto-list {
+		margin: 0 auto;
+	}
 	.auto-list img {
-		width: 117%
+		width: 100%
 	}
 	#autos h3 {
 		padding-top: 20px;
@@ -590,6 +595,7 @@ footer {
 	}
 	#autos p {
 		text-align: center;
+		font-weight: bold;
 	}
 	#autos span {
 		text-align: center;
