@@ -516,11 +516,10 @@ footer {
 	    /* list-style: none; */
 	background: #ddd;
 	position: absolute;
+	right: 0px;
+	left: 50%;
 	width: 200px;		
 }
-	.nav-menu ul {
-	
-	}
 	.phone-number {
 		display: none;
 	}
