@@ -254,15 +254,7 @@ color: var(--white-item-color);
 	text-align: center;
 }
 #cta a {
-	display: inline-block;
-    text-decoration: none;
-    color: var(--main-color);
-    background-color: var(--link-background-color);
-    text-align: center;
-    padding: 20px 40px 20px 40px;
     margin-bottom: 36px;
-    border-radius: 10px;
-    font-weight: bold;
 }
 .content-list {
 	display: flex;
