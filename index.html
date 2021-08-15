@@ -30,7 +30,7 @@
 		</div>
 	</header>
 	<main>
-		<section id="hero">
+		<section id="hero" class="hero">
 			<div class="overlay">
 				<div class="container">
 					<h1>АРЕНДА ПОДЕРЖАННЫХ АВТОМОБИЛЕЙ из США и ЕВРОПЫ</h1>
@@ -38,7 +38,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="facts-about-company">
+		<section id="facts-about-company" class="facts-about-company">
 			<div class="overlay">
 				<div class="container">
 					<h2 class="head-text-style">с нашей компанией всегда удобно и выгодно</h2>
@@ -66,7 +66,7 @@
 								<li>Инспекция перед покупкой</li>
 								<li>Консультация по таможенному оформлению</li>
 							</ul>
-							<a href="#">Заказать</a>
+							<div class="button"><a href="#">Заказать</a></div>
 						</div>
 						
 						<div class="prices">
@@ -80,7 +80,7 @@
 								<li>Гарантия 5000 км</li>
 								<li>Комплект фильтров</li>
 							</ul>
-							<a href="#">Заказать</a>
+							<div class="button"><a href="#">Заказать</a></div>
 						</div>
 						
 						<div class="prices">
@@ -95,7 +95,7 @@
 								<li>Комплект фильтров ТО по прибытию</li>
 								<li>Страховка</li>
 							</ul>
-							<a href="#">Заказать</a>
+							<div class="button"><a href="#">Заказать</a></div>
 						</div>
 					</div>
 				</div>			
@@ -140,21 +140,36 @@
 					<h2 class="head-text-style">наши последние приобретения</h2>
 					<div class="content-list">
 						<div class="auto-list">
-							<img src="img/car-001.png" alt="Car-001.png">
+							<picture>
+								<source srcset="img/car-001.png" media="(min-width: 601px)"/>
+								<source srcset="img/car-001-400px.png" media="(min-width: 370px)"/>
+								<source srcset="img/car-001.png" media="(max-width: 360px)"/>
+								<img src="img/car-001.png"  alt="Car-001.png"/>
+							</picture>
 							<h3>volkswagen</h3>
 							<p>Scirocco R</p>
 							<span>Переднеприводный Volkswagen Scirocco R оснащен двухлитровым турбированным двигателем от «пятого» Golf GTI, мощность которого возросла с 200 до 265 л. с.</span>
 						</div>
 
 						<div class="auto-list">
-							<img src="img/car-002.png" alt="Car-002.png">
+							<picture>
+								<source srcset="img/car-002.png" media="(min-width: 601px)"/>
+								<source srcset="img/car-002-400px.png" media="(min-width: 370px)"/>
+								<source srcset="img/car-002.png" media="(max-width: 360px)"/>
+								<img src="img/car-002.png"  alt="Car-002.png"/>
+							</picture>
 							<h3>chevrolet</h3>
 							<p>Camaro</p>
 							<span>2-литровый турбированный двигатель развивает мощность в 238 л.c. и выдает до 400 Н*м крутящего момента, разгоняя Camaro от 0 до 100 км/ч за 5,9 сек.</span>
 						</div>
 
 						<div class="auto-list">
-							<img src="img/car-003.png" alt="Car-003.png">
+							<picture>
+								<source srcset="img/car-003.png" media="(min-width: 601px)"/>
+								<source srcset="img/car-003-400px.png" media="(min-width: 370px)"/>
+								<source srcset="img/car-003.png" media="(max-width: 360px)"/>
+								<img src="img/car-003.png"  alt="Car-003.png"/>
+							</picture>
 							<h3>BMW</h3>
 							<p>X4</p>
 							<span>Его максимальный крутящий момент достигает 400 Н·м, а разгон с места до 100 км/ч длится всего 5,5 секунды. Выброс CO2 составляет 193 г/км.</span>

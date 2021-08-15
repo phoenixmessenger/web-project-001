@@ -32,7 +32,64 @@ p {
 	max-width: 1170px;
 	margin: auto;
 }
+/*Глобальные классы, используемые по всему документу*/
+.head-text-style {
+	font-family: Open Sans, Arial;
+	font-weight: bold;
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin: 30px 0 30px 0;
+}
+.head-yellow-text {
+	font-family: Open Sans, Arial;
+	font-weight: bold;
+	font-size: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin-top: 40px;	
+	color: var(--link-background-color);
+}
+.paragraph-text-style {
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.paragraph-text-style::first-letter {
+	font-size: 130%;
+}
+.accent-text {
+	font-family: Open Sans, Arial;
+	font-size: 42px;
+	color: var(--link-background-color);
+	text-transform: uppercase;
+}
+.overlay {
+	padding-top: 60px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.button {
+	text-align: center;
+}
+.button a {
+	display: inline-block;
+	text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--main-color);
+    background-color: var(--link-background-color);
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+}
+.button a:hover {
+	background-color: rgba(255, 210, 42, 1);
+}
 
+/*Стилизация хедера */
 .header {
 	display: flex;
 	align-items: center;
@@ -79,54 +136,16 @@ p {
 	position: absolute;
 	left: -30px;
 }
-.head-text-style {
-	font-family: Open Sans, Arial;
-	font-weight: bold;
-	font-size: 42px;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 1.4;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-.head-yellow-text {
-	font-family: Open Sans, Arial;
-	font-weight: bold;
-	font-size: 42px;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 1.4;
-	margin-top: 40px;	
-	color: var(--link-background-color);
-}
-.paragraph-text-style {
-	font-family: Roboto;
-	font-size: 22px;
-	text-align: center;
-	margin-bottom: 40px;
-}
-.paragraph-text-style::first-letter {
-	font-size: 130%;
-}
-.accent-text {
-	font-family: Open Sans, Arial;
-	font-size: 42px;
-	color: var(--link-background-color);
-	text-transform: uppercase;
-}
-.overlay {
-	padding-top: 60px;
-	background-color: rgba(0, 0, 0, 0.7);
-}
-.button {
-	text-align: center;
-}
+
+
+/* Стилизация по блокам в main */
 #hero {
 	background-image: url(img/hero-bg.jpg);
 	background-position: 50%, 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 #hero .overlay {
 	background-color: rgba(0, 0, 0, 0.1);
@@ -145,17 +164,6 @@ p {
     font-weight: 500;
     font-style: normal;
     margin-bottom: 130px;
-}
-.button a {
-	display: inline-block;
-	text-decoration: none;
-    	font-weight: 500;
-    font-size: 18px;
-    color: var(--main-color);
-    background-color: var(--link-background-color);
-    text-align: center;
-    padding: 20px 40px 20px 40px;
-    border-radius: 10px;
 }
 #facts-about-company {
 	background-image: url(img/background-002.jpg);
@@ -227,19 +235,8 @@ color: var(--white-item-color);
 	text-align: center;
 	list-style-type: none;
 }
-.prices a {
-	display: inline-block;
-   	text-decoration: none;
-   	color: var(--main-color);
-	background-color: var(--link-background-color);
-	text-align: center;
-	padding: 20px 40px 20px 40px;
-	margin-bottom: 36px;
-	border-radius: 10px;
-	font-weight: bold;
-}
-.prices a:hover {
-	background-color: rgba(255, 210, 42, 1);
+.prices .button {
+	margin-bottom: 38px;
 }
 #cta {
 	background-image: url(img/background-001.jpg);
@@ -367,9 +364,8 @@ color: var(--white-item-color);
 .orderform {
 	display: block;
 	border: 3px solid rgb(255, 192, 42);
-    	padding: 50px, 20px;
-    	border-radius: 5px;
-    	background: var(--white-item-color);
+   	padding: 50px, 20px;
+   	background: var(--white-item-color);
 }
 .orderform p {
 	margin-bottom: 20px;
@@ -384,24 +380,24 @@ color: var(--white-item-color);
 	padding: 10px, 0px, 18px;
 	margin: 20px;
 }
-.orderform {
-	margin-left: 40px;
-	padding: 4px, 6px, 4px, 10px;
-}
 input {
     padding: 10px;
+    margin: 0 30px 0 30px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+input[placeholder] {
+	width: 300px;
 }
 input[type="submit"] {
 	display: inline-block;
 	text-decoration: none;
-    	font-weight: 500;
+    font-weight: 500;
     font-size: 18px;
     color: var(--main-color);
     background-color: var(--link-background-color);
-    text-align: center;
     padding: 20px 40px 20px 40px;
+    margin: 0 0 0 70px;
     border-radius: 10px;
 	border: none;
 }
@@ -426,6 +422,8 @@ input[type="submit"] {
 	list-style-type: none;
 	padding-bottom: 40px;
 }
+
+/*Стилизация футера*/
 footer {
 	background-color: var(--main-color);
 }
@@ -563,10 +561,20 @@ footer {
 		margin-bottom: 0;
 	}
 }
+@media screen and (min-device-pixel-ratio: 2), 
+		screen and (min-resolution: 2dppx)
+		screen and (min-resolution: 375px) {
+			.hero {
+				background-image: url(img/hero-bg@2x.png);
+			}
+		}
 @media (max-width: 600px) {
 	#cta p {
 		text-align: justify;
 		margin: 10px 30px 30px 30px; 
+	}
+	.head-text-style {
+		margin-top: 20px;
 	}
 	.head-yellow-text {
 		font-size: 20px;
@@ -582,15 +590,9 @@ footer {
 	#autos {
 		background-image: none;
 	}
-	.auto-list {
-		margin: 0 auto;
-	}
-	.auto-list img {
-		width: 100%
-	}
 	#autos h3 {
-		padding-top: 20px;
 		text-align: center;
+		padding-top: 15px;
 	}
 	#autos p {
 		text-align: center;
@@ -598,6 +600,7 @@ footer {
 	}
 	#autos span {
 		text-align: center;
+		padding-bottom: 20px;
 	}
 }
 @media (max-width: 600px) {
@@ -613,7 +616,14 @@ footer {
 	}
 	.orderform {
 		justify-content: center;
-		margin-left: 0;
+		max-width: 350px;
+		margin: 0 5px 0 5px;
+	}
+	input[type="submit"] {
+		margin: 0 0 0 40px;
+	}
+	input {
+		max-width: 200px;
 	}
 }
 @media (max-width: 600px) {
