@@ -493,17 +493,11 @@ footer {
 	position: relative;
 }
 	.nav-menu li a {
-    /* text-decoration: none; */
     padding: 14px 20px;
-    /* color: var(--main-color); */
-    /* background-color: #ddd; */
-    /* transition: all ease 0.25s; */
-    /* transition: .25s; */
     display: block;
 }
 	.nav-menu {
 	display: none;
-	    /* list-style: none; */
 	background: #ddd;
 	position: absolute;
 	right: 0px;
@@ -522,7 +516,7 @@ footer {
 }
 @media (max-width: 600px) {
 	#hero h1 {
-		font-size: 25px;
+		font-size: 30px;
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -533,13 +527,16 @@ footer {
 	.facts-block {
 		flex-wrap: wrap;
 	}
-	.facts-block-text h3 {
-		margin: 0 auto; 
+	#facts-about-company h3 {
+		font-size: 22px;
+		margin: 10px 0 10px 0; 
 		text-align: center;
 	}
 	.facts-block-text p {
+		font-size: 20px
 		line-height: 1.8;
 		text-align: justify;
+		margin: 10px 30px 30px 30px;
 	}
 	.our-prices-block {
 		margin-bottom: 0;
@@ -566,10 +563,11 @@ footer {
 		margin: 10px 30px 30px 30px; 
 	}
 	.head-text-style {
+		font-size: 25px;
 		margin-top: 20px;
 	}
 	.head-yellow-text {
-		font-size: 20px;
+		font-size: 25px;
 		margin: 0 auto; 
 	}
 	.content-list {
@@ -583,14 +581,17 @@ footer {
 		background-image: none;
 	}
 	#autos h3 {
+		font-size: 22px;
 		text-align: center;
 		padding-top: 15px;
 	}
 	#autos p {
+		font-size: 20px;
 		text-align: center;
 		font-weight: bold;
 	}
 	#autos span {
+		font-size: 18px;
 		text-align: center;
 		padding-bottom: 20px;
 	}
