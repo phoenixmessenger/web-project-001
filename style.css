@@ -517,12 +517,8 @@ footer {
 
 /* Адаптив для планшетов */
 @media (max-width: 1050px) {
-	header {
-	max-width: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
-	}
 	.container {
-		max-width: 100%;
+		width: 100%;
 		margin: auto;
 	}
 	.header {
@@ -734,10 +730,6 @@ footer {
 /* Адаптив- смартфон */
 
 @media (max-width: 600px) {
-/*	header {
-	max-width: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
-	}*/
 	.header a .logo-name {
 	margin-left: 20px;
 	}
