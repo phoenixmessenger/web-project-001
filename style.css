@@ -656,7 +656,7 @@ footer {
 		width: 80%;
 		margin: auto;
 		text-align: center;
-		flex-wrap: wrap;
+		flex-direction: column;
 	}
 	.order-containter li {
 		font-size: 50px;
@@ -707,7 +707,7 @@ footer {
 		margin-bottom: 50px;
 	}
 	input {
-		max-width: 600px;
+		width: 500px;
 	}
 	input[placeholder] {
 		width: 500px;
