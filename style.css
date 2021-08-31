@@ -533,7 +533,7 @@ footer {
 	.burger {
 	display: block;
 	cursor: pointer;
-	padding-right: 50px;
+	padding-right: 5px;
 	}
 	.burger span {
 	width: 30px;
