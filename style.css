@@ -682,15 +682,19 @@ footer {
 }
 @media (max-width: 1050px) {
 	.orderform {
-		max-width: 600px;
+		max-width: 500px;
 		margin-bottom: 50px;
 	}
 	input {
-		max-width: 600px;
+		max-width: 400px;
 	}
 	input[placeholder] {
-		width: 500px;
+		width: 400px;
 	}
+        input [type="submit"] {
+              font-size: 15px;
+              padding: 10px 20px 10px 20px;
+              margin: auto
 	#partners .paragraph-text-style {
 		max-width: 70%;
 		margin: auto;
