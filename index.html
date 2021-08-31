@@ -11,7 +11,7 @@
 		<div class="container">
 			<div class="header">
 			
-				<a href="#"><img src="img/logo.jpg" alt="Logo.jpg" class="logo"></a>
+				<a href="./index.html"><span class="logo-name">Import<span class="logo-accent">Car</span></span></a>
 				<nav>
 					<div class="burger">
 						<span></span>
@@ -19,6 +19,12 @@
 						<span></span>
 					</div>
 					<ul class="nav-menu">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Our Services</a></li>
+						<li><a href="#">Delivery</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+					<ul class="mob-nav-menu">
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Our Services</a></li>
 						<li><a href="#">Delivery</a></li>
@@ -142,8 +148,9 @@
 						<div class="auto-list">
 							<picture>
 								<source srcset="img/car-001.png" media="(min-width: 601px)"/>
-								<source srcset="img/car-001-400px.png" media="(min-width: 370px)"/>
-								<source srcset="img/car-001.png" media="(max-width: 360px)"/>
+								<source srcset="img/car-001.png" media="(max-width: 399px)"/>
+								<source srcset="img/car-001-400px.png" media="(max-width: 449px)"/>
+								<source srcset="img/car-001-450px.png" media="(max-width: 600px)"/>
 								<img src="img/car-001.png"  alt="Car-001.png"/>
 							</picture>
 							<h3>volkswagen</h3>
@@ -154,8 +161,9 @@
 						<div class="auto-list">
 							<picture>
 								<source srcset="img/car-002.png" media="(min-width: 601px)"/>
-								<source srcset="img/car-002-400px.png" media="(min-width: 370px)"/>
-								<source srcset="img/car-002.png" media="(max-width: 360px)"/>
+								<source srcset="img/car-002.png" media="(max-width: 399px)"/>
+								<source srcset="img/car-002-400px.png" media="(max-width: 449px)"/>
+								<source srcset="img/car-002-450px.png" media="(max-width: 600px)"/>
 								<img src="img/car-002.png"  alt="Car-002.png"/>
 							</picture>
 							<h3>chevrolet</h3>
@@ -166,8 +174,9 @@
 						<div class="auto-list">
 							<picture>
 								<source srcset="img/car-003.png" media="(min-width: 601px)"/>
-								<source srcset="img/car-003-400px.png" media="(min-width: 370px)"/>
-								<source srcset="img/car-003.png" media="(max-width: 360px)"/>
+								<source srcset="img/car-003.png" media="(max-width: 399px)"/>
+								<source srcset="img/car-003-400px.png" media="(max-width: 449px)"/>
+								<source srcset="img/car-003-450px.png" media="(max-width: 600px)"/>
 								<img src="img/car-003.png"  alt="Car-003.png"/>
 							</picture>
 							<h3>BMW</h3>
@@ -183,9 +192,9 @@
 				<h2 class="head-text-style">оставьте заявку<br>и получите <span class="head-yellow-text">скидку 15%</span></h2>
 				<div class="order-container">
 					<ol>
-						<li>Акция не суммируется с другими скидками.<br>Скидки распространяются на все товары этого сайта</li>
-						<li>Акция не суммируется с другими скидками.<br>Скидки распространяются на все товары этого сайта</li>
-						<li>Акция не суммируется с другими скидками.<br>Скидки распространяются на все товары этого сайта</li>
+						<li>Акция не суммируется с другими скидками.Скидки распространяются на все товары этого сайта</li>
+						<li>Акция не суммируется с другими скидками.Скидки распространяются на все товары этого сайта</li>
+						<li>Акция не суммируется с другими скидками.Скидки распространяются на все товары этого сайта</li>
 					</ol>
 					<form action="" class="orderform">
 							<h3>ОФОРМИТЬ ЗАЯВКУ</h3>
@@ -197,7 +206,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="partners">
+		<section id="partners" class="partners">
 			<div class="overlay">
 				<div class="container">
 					<h2 class="head-text-style">наши партнёры</h2>
@@ -241,7 +250,7 @@
 	<footer>
 		<div class="container">
 			<div class="footer">
-				<a href="#"><img src="img/logo.jpg" alt="Logo.jpg" class="logo"></a>
+				<a href="./index.html"><span class="logo-name">Import<span class="logo-accent">Car</span></span></a>
 				<ul class="footer-menu">
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Our Services</a></li>
@@ -264,8 +273,14 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script>
 	$('.burger').on('click', function(){
-		$('.nav-menu').slideToggle();
-	})
+		$('.mob-nav-menu').slideToggle();
+	});
+	let screenwidth = $(window).width();
+	$(window).resize(function() {
+		if (screenwidth <= 600) {
+			$('.mob-nav-menu').hide();
+		}
+	}).resize(); 
 	</script>
 </body>
 </html>
