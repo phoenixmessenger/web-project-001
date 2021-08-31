@@ -521,19 +521,23 @@ footer {
 	max-width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
 	}
+	.container {
+		max-width: 100%;
+		margin: auto;
+	}
 	.header {
 		width: 100%;
 	}
 	.header a .logo-name {
-	margin-left: 20px;
+		margin-left: 20px;
 	}
 	.nav-menu {
-	display: none;
+		display: none;
 	}
 	.burger {
 	display: block;
 	cursor: pointer;
-	margin-right: 50px;
+	padding-right: 50px;
 	}
 	.burger span {
 	width: 30px;
@@ -571,7 +575,7 @@ footer {
 }
 @media(max-width: 1000px) {
 	#hero h1 {
-		width: 70%;
+		max-width: 70%;
 		font-size: 33px;
 		margin: 0 auto;
 	}
@@ -730,10 +734,10 @@ footer {
 /* Адаптив- смартфон */
 
 @media (max-width: 600px) {
-	header {
+/*	header {
 	max-width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
-	}
+	}*/
 	.header a .logo-name {
 	margin-left: 20px;
 	}
@@ -743,7 +747,7 @@ footer {
 	.burger {
 	display: block;
 	cursor: pointer;
-	margin-right: 20px;
+	padding-right: 20px;
 	}
 	.burger span {
 	width: 30px;
@@ -763,7 +767,7 @@ footer {
 	list-style: none;
 	background: #ddd;
 	position: absolute;
-	right: 50%;
+	right: 0;
 	width: 200px;		
 	}
 	.phone-number {
@@ -932,8 +936,8 @@ footer {
 	}
 }
 @media (max-width: 340px) {
-	.header {
-		width: 100%;
+	#hero h1 {
+		font-size: 25px;
 	}
 	img {
 		width: 100%;
@@ -964,9 +968,6 @@ footer {
 	}
 }
 @media (min-width: 530px, max-width: 550px) {
-	.mob-nav-menu {
-		right: 0px;
-	}
 	.order-container li:before {
 		font-size: 24px;
 		left: 10px;
