@@ -529,16 +529,17 @@ footer {
 		position: sticky;
 		bottom: 30px;
 		left: 80%;
-		border: 2px solid var(--white-item-color);
-		border-radius: 50%; 
 }
 	.adapt-phone a {
 		text-decoration: none;
 
 	}
-	.adapt-phone-icon {
+	.adapt-phone .adapt-phone-icon {
 		width: 80px;
 		height: 80px;
+		background-image: url(img/phoneicon.svg);
+		border: 2px solid var(--white-item-color);
+		border-radius: 50%; 
 	}
 	.header a .logo-name {
 		margin-left: 20px;
