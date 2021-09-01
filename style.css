@@ -514,12 +514,31 @@ footer {
 .burger {
 	display:none;
 }
+.adapt-phone {
+	display: none;
+}
 
 /* Адаптив для планшетов */
 @media (max-width: 1050px) {
 	.container {
 		max-width: 100%;
 		margin: auto;
+	}
+	.adapt-phone {
+		display: inline-block;
+		position: sticky;
+		bottom: 30px;
+		left: 80%;
+		border: 2px solid var(--white-item-color);
+		border-radius: 50%; 
+}
+	.adapt-phone a {
+		text-decoration: none;
+
+	}
+	.adapt-phone-icon {
+		width: 80px;
+		height: 80px;
 	}
 	.header a .logo-name {
 		margin-left: 20px;
@@ -528,33 +547,33 @@ footer {
 		display: none;
 	}
 	.burger {
-	display: block;
-	cursor: pointer;
-	padding-right: 5px;
+		display: block;
+		cursor: pointer;
+		padding-right: 5px;
 	}
 	.burger span {
-	width: 30px;
-	height: 4px;
-	background: #fff;
-	display: block;
-	margin: 4px;
+		width: 30px;
+		height: 4px;
+		background: #fff;
+		display: block;
+		margin: 4px;
 	}
 	.nav {
-	position: relative;
+		position: relative;
 	}
 	.mob-nav-menu li a {
-    padding: 14px 20px;
-    display: block;
+	    padding: 14px 20px;
+	    display: block;
 	}
 	.mob-nav-menu {
-	list-style: none;
-	background: #ddd;
-	position: absolute;
-	right: 0;
-	width: 200px;		
+		list-style: none;
+		background: #ddd;
+		position: absolute;
+		right: 0;
+		width: 200px;		
 	}
 	.phone-number {
-	display: none;
+		display: none;
 	}
 	.head-text-style {
 		font-size: 35px;

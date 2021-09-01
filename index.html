@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 	<title>Автоцентр - Продажа и Аренда Авто в Киеве</title>
 </head>
-<body>
+<body onload= "adoptMenu(); closWin();">
 	<header>
 		<div class="container">
 			<div class="header">
@@ -269,18 +271,8 @@
 				</div>
 			</div>
 		</div>
+		<div>Автор иконок: <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/ru/" title="Flaticon">www.flaticon.com</a></div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script>
-	$('.burger').on('click', function(){
-		$('.mob-nav-menu').slideToggle();
-	});
-	let screenwidth = $(window).width();
-	$(window).resize(function() {
-		if (screenwidth <= 600) {
-			$('.mob-nav-menu').hide();
-		}
-	}).resize(); 
-	</script>
+	<div class="adapt-phone"><a href="tel: +38 093 111 11 11"><svg class="adapt-phone-icon"><use href="/img/phoneicon.svg"></use></svg></a></div>
 </body>
 </html>
