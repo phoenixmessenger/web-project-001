@@ -14,8 +14,9 @@
 	margin: 0px;
 	padding: 0px;
 }
+html,
 body {
-	margin: 0px;
+	margin: 0 auto;
 }
 header {
 	position: fixed;
@@ -23,9 +24,9 @@ header {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.6);
 }
+
 li.
 p {
-
 	var (--main-color);
 }
 
@@ -33,6 +34,7 @@ p {
 	max-width: 1170px;
 	margin: auto;
 }
+
 /*Глобальные классы, используемые по всему документу*/
 .head-text-style {
 	font-family: Open Sans, Arial;
@@ -166,6 +168,7 @@ p {
 }
 
 /* Стилизация по блокам в main */
+
 #hero {
 	background-image: url(img/hero-bg.jpg);
 	background-position: 50%, 50%;
@@ -475,8 +478,11 @@ footer {
 .footer .logo-accent {
 	color: var(-link-background-color);
 }
-.footer-lozung {
+.footer-ident {
+	display: inline-block;
 	text-align: center;
+	word-wrap: break-word;
+	max-width: 170px;
 }
 .footer-text {
 	font-family: Open Sans, Arial;
@@ -511,6 +517,19 @@ footer {
 .address-box a {
 	text-decoration: none;
 }
+footer .refer {
+	width: 100%;
+	background-color: var(--main-color);
+	margin: 0 auto;
+}
+footer .refer a {
+	text-decoration: none;
+}
+footer .refer .paragraph-text-style {
+	color: var(--white-item-color);
+	font-size: 10px;
+	margin: 0;
+}
 .burger {
 	display:none;
 }
@@ -526,8 +545,8 @@ footer {
 	}
 	.adapt-phone {
 		display: inline-block;
-		position: sticky;
-		bottom: 30px;
+		position: fixed;
+		bottom: 40px;
 		left: 80%;
 }
 	.adapt-phone a {
@@ -711,10 +730,11 @@ footer {
 	input[placeholder] {
 		width: 400px;
 	}
-        input [type="submit"] {
-              font-size: 15px;
-              padding: 10px 20px 10px 20px;
-              margin: auto
+    input [type="submit"] {
+        font-size: 15px;
+        padding: 10px 20px 10px 20px;
+        margin: auto
+    }
 	#partners .paragraph-text-style {
 		max-width: 70%;
 		margin: auto;
@@ -944,9 +964,13 @@ footer {
 	.footer-menu {
 		margin-bottom: 15px;
 	}
-	.footer-lozung {
+	.footer-ident {
 		margin-bottom: 15px;
 	}
+	.adapt-phone .adapt-phone-icon {
+		width: 50px;
+		height: 50px;
+}
 }
 @media (max-width: 340px) {
 	#hero h1 {
@@ -979,6 +1003,9 @@ footer {
 	.footer a .logo-name {
 		text-align: center;
 	}
+	.adapt-phone .adapt-phone-icon {
+		width: 45px;
+		height: 45px;
 }
 @media (min-width: 530px, max-width: 550px) {
 	.order-container li:before {
