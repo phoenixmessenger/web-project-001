@@ -517,18 +517,8 @@ footer {
 .address-box a {
 	text-decoration: none;
 }
-footer .refer {
-	width: 100%;
-	background-color: var(--main-color);
-	margin: 0 auto;
-}
-footer .refer a {
-	text-decoration: none;
-}
-footer .refer .paragraph-text-style {
-	color: var(--white-item-color);
-	font-size: 10px;
-	margin: 0;
+.refer {
+	display: none;
 }
 .burger {
 	display:none;
@@ -536,7 +526,52 @@ footer .refer .paragraph-text-style {
 .adapt-phone {
 	display: none;
 }
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+}
+.modal_body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px, 10px;
 
+}
+.modal_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	color: var(--main-color);
+	text-decoration: none;
+}
+.modal_title {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.modal_form {
+	position: relative;
+	background-color: white;
+	padding: 50px 50px;
+}
+.modal_form input {
+	max-width: 300px;
+	display: block;
+	margin: auto;
+	padding: 10px;
+}
+.modal_form input[type="Submit"] {
+	font-size: 15px;
+	margin-top: 20px;
+}
 /* Адаптив для планшетов */
 @media (max-width: 1050px) {
 	.container {
@@ -570,6 +605,18 @@ footer .refer .paragraph-text-style {
 		display: block;
 		cursor: pointer;
 		padding-right: 5px;
+		z-index: 5;
+	}
+	.burger_overlay {
+		display: none;
+		text-decoration: none;
+		position: fixed;
+		z-index: -5;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		top: 0;
+		left: 0;
 	}
 	.burger span {
 		width: 30px;
@@ -603,6 +650,51 @@ footer .refer .paragraph-text-style {
 	}
 	.paragraph-text-style {
 		font-size: 32px;
+	}
+}
+@media (max-width: 1050px) {
+	.content-list {
+		width: 93%;
+		text-align: center;
+		flex-wrap: wrap;
+		margin: auto;
+	}
+	.content-list span {
+		display: block;
+		max-width: 270px;
+	}
+	.auto-list {
+		max-width: 350px;
+		margin-right: 20px;
+	}
+	.auto-list img {
+		width: 100%;
+	}
+	.order-container {
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		padding-bottom: 90px;
+	}
+	.footer {
+		width: 90%;
+		margin: auto;
+	}
+}
+@media (max-width: 1050px) {
+	footer .refer {
+		display: block;
+		width: 100%;
+		background-color: var(--main-color);
+		margin: 0 auto;
+}
+	footer .refer a {
+		text-decoration: none;
+	}
+	footer .refer .paragraph-text-style {
+		color: var(--white-item-color);
+		font-size: 10px;
+		margin: 0;
 	}
 }
 @media(max-width: 1000px) {
@@ -644,35 +736,7 @@ footer .refer .paragraph-text-style {
 		margin: 10px 20px 30px 70px; 
 	}
 }
-@media (max-width: 1050px) {
-	.content-list {
-		width: 93%;
-		text-align: center;
-		flex-wrap: wrap;
-		margin: auto;
-	}
-	.content-list span {
-		display: block;
-		max-width: 270px;
-	}
-	.auto-list {
-		max-width: 350px;
-		margin-right: 20px;
-	}
-	.auto-list img {
-		width: 100%;
-	}
-	.order-container {
-		width: 80%;
-		margin: auto;
-		text-align: center;
-		padding-bottom: 90px;
-	}
-	.footer {
-		width: 90%;
-		margin: auto;
-	}
-}
+
 @media (max-width: 1000px) {
 	.content-list {
 		width: 93%;
@@ -717,32 +781,6 @@ footer .refer .paragraph-text-style {
 		justify-content: space-between;
 		align-items: center;
 		margin: auto;
-	}
-}
-@media (max-width: 1050px) {
-	.orderform {
-		max-width: 500px;
-		margin-bottom: 50px;
-	}
-	input {
-		max-width: 400px;
-	}
-	input[placeholder] {
-		width: 400px;
-	}
-    input [type="submit"] {
-        font-size: 15px;
-        padding: 10px 20px 10px 20px;
-        margin: auto
-    }
-	#partners .paragraph-text-style {
-		max-width: 70%;
-		margin: auto;
-	}
-	.image-gallery {
-		padding-top: 30px;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
 	}
 }
 @media (max-width: 1000px) {
